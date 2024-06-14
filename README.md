@@ -36,6 +36,8 @@ Users should be able to:
 
 [Live Site URL here](https://mendezpvi.github.io/fm-article-preview-component/) 👀
 
+[Solution in Frontend Mentor](https://www.frontendmentor.io/solutions/article-preview-component-bpYp1DoWF3) 👀
+
 [Challenges overcome](https://github.com/mendezpvi/frontend-mentor-challenges) 👀
 
 ## *Built with* :hammer_and_pich:
