@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Preview Component</title>
+
+  <link rel="icon" href="./assets/icon/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="./assets/icon/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/var.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="body grid">
+  <main class="card b-shadow">
+    <header class="card-illus">
+      <img src="./assets/image/drawers.webp" alt="">
+    </header>
+
+    <section class="card-intro">
+      <h1 class="fw-700 clr-heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+      <p class="fw-500 clr-parr">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+    </section>
+
+    <footer class="card-author">
+      <img src="./assets/image/avatar-michelle.jpg" alt="Michelle Appleton smiling at the camera.">
+      <h2 class="fw-700 clr-heading">Michelle Appleton <time class="fw-500 clr-parr" datetime="2020-6-28">28 Jun 2020</time></h2>
+      <button id="share-btn" class="grid" type="button" title="Share">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z" />
+        </svg>
+      </button>
+      
+      <div id="smedia" class="smedia fw-500 clr-white">
+        <span>SHARE</span>
+        <ul class="flex">
+          <li>
+            <button class="grid" type="button" title="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path fill="currentColor"
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="grid" type="button" title="X-Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="grid" type="button" title="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path fill="currentColor"
+                  d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+  <footer class="attribution fw-500 clr-heading">
+    <small>Challenge by <a class="fw-700" href="https://www.frontendmentor.io/challenges" target="_blank" rel="noreferrer">Frontend Mentor</a> - Coded by <a class="fw-700" href="https://github.com/mendezpvi/fm-article-preview-component" target="_blank" rel="noreferrer">VIMP</a></small>
+  </footer>
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
