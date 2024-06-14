@@ -1,0 +1,224 @@
+.body {
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  background-color: var(--light-grayish-blue);
+}
+
+/* Utility classes */
+.grid {
+  display: grid;
+  place-content: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.clr-heading {
+  color: var(--very-dark-grayish-blue);
+}
+.clr-parr {
+  color: var(--desaturated-dark-blue);
+}
+.clr-white {
+  color: var(--light-grayish-blue);
+}
+.b-shadow {
+  box-shadow: 0 0 1rem var(--shadow), 0 .5rem 1rem var(--shadow), 0 1rem 1rem var(--shadow);
+}
+/*  */
+
+.card {
+  margin-block: 2.5rem;
+  inline-size: 87.5vw;
+  min-inline-size: 20rem;
+  max-inline-size: 20.51rem;
+  display: grid;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.card-illus {
+  block-size: 12.5rem;
+  & img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center -1.05rem;
+  }
+}
+
+.card-intro {
+  padding: 2.3rem 1.98rem 0;
+  & h1 {
+    max-inline-size: 27ch;
+    font-size: clamp(1.024rem, .55rem + 2vw, 1.281rem);
+    line-height: 1.46;
+  }
+  & p {
+    max-inline-size: 31.5ch;
+    margin-top: .8rem;
+    font-size: .828rem;
+    line-height: 1.5;
+  }
+}
+
+.card-author {
+  margin-top: -0.3rem;
+  padding: 2.3rem 1.98rem 1.25rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+
+  & img {
+    inline-size: 2.5rem;
+    border-radius: 50%;
+  }
+  & h2 {
+    grid-column: 2/3;
+    font-size: .825rem;
+    & time {
+      display: block;
+      font-size: .8rem;
+    }
+  }
+  & button {
+    inline-size: 2rem;
+    block-size: 2rem;
+    border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+    color: var(--desaturated-dark-blue);
+    z-index: 10;
+  }
+}
+
+.smedia {
+  padding-inline: 2rem;
+  inline-size: 100%;
+  block-size: 4.55rem;
+  display: none;
+  align-items: center;
+  gap: .9rem;
+  background-color: var(--very-dark-grayish-blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  & span {
+    font-size: .8rem;
+    letter-spacing: 5px;
+  }
+  & button {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    color: inherit;
+    background-color: var(--desaturated-dark-blue);
+  }
+}
+.smedia--show {
+  display: flex;
+}
+
+.attribution {
+  margin-top: -2.9rem;
+  padding-block: 1rem;
+  font-size: .83rem;
+  text-align: center; 
+  & a {
+    margin-inline: .15rem;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -.15rem;
+      right: 0;
+      inline-size: 100%;
+      block-size: .12rem;
+      background-color: currentColor;
+      transition: inline-size .3s ease-in-out;
+    }
+  }
+}
+
+
+@media (width >= 768px) {
+  .card {
+    margin-top: 4.2rem;
+    max-inline-size: 45.58rem;
+    grid-template-columns: auto 1fr;
+    gap: .5rem;
+    overflow: visible;
+  }
+  .card-illus {
+    max-inline-size: 17.8rem;
+    grid-row: span 2;
+    block-size: 100%;
+    & img {
+      object-position: 0;
+      border-radius: var(--radius) 0 0 var(--radius);
+    }
+  }
+  .card-intro {
+    padding-top: 2rem;
+    & h1 {
+      line-height: 1.37;
+    }
+    & p {
+      max-inline-size: 42ch;
+    }
+  }
+  .card-author {
+    padding-top: 1rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .smedia {
+    padding-inline: 2.14rem;
+    inline-size: fit-content;
+    block-size: 3.45rem;
+    gap: 1rem;
+    border-radius: var(--radius);
+    left: unset;
+    right: 0;
+    bottom: 100%;
+    transform: translate(27.5%, -14%);
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -.7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top: 1rem solid var(--very-dark-grayish-blue);
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+    }
+  }
+  .attribution {
+    padding-top: 2.5rem;
+  }
+}
+
+*:focus-visible {
+  outline: .15rem dotted currentColor;
+  outline-offset: .15rem;
+}
+@media(hover:hover) {
+  a:hover::after {
+    inline-size: 0;
+  }
+}
+a:focus-visible::after {
+  inline-size: 0;
+}
